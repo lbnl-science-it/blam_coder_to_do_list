@@ -20,7 +20,10 @@ class TaskManager:
             return "\n".join(formatted_tasks)
     
         for index, task in enumerate(self.tasks, 1):
-            formatted_task = format_task(task, index if show_numbers else None)
+            if show_numbers:
+                formatted_task = f"{index}. {task.description}"
+            else:
+                formatted_task = task.description
             formatted_tasks.append(formatted_task)
     
         total_tasks = f"\nTotal tasks: {len(self.tasks)}"
