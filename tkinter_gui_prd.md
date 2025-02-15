@@ -45,9 +45,13 @@ This project enhances the existing command-line To-Do List application by adding
 todo_app/
 
 ├── main.py          # Main program entry point
+
 ├── tasks.py         # Task management logic
+
 ├── storage.py       # File storage and retrieval
+
 ├── gui.py           # GUI implementation
+
 └── utils.py         # Helper functions
 
 ## Why This Project?
